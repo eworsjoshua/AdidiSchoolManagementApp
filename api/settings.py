@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     "django_filters",
     "administrator",
     "teacher",
-    "student"
+    "student",
+    "academics",
     
     
 ]
