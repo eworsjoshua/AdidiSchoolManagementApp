@@ -1,2 +1,27 @@
+
+# Environment variables
 .env
 .env.*
+!.env.example
+
+# Virtual environment
+venv/
+.venv/
+
+# SQLite database
+db.sqlite3
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django files
+staticfiles/
+media/
+
+# Operating system files
+.DS_Store
+
+db.sqlite3
+__pycache__/
