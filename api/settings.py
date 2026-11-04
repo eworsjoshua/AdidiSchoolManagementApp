@@ -16,6 +16,9 @@ from dotenv import load_dotenv
 import os
 
 
+
+
+
 load_dotenv()
 
 
@@ -56,6 +59,7 @@ INSTALLED_APPS = [
     "academics",
     "attendance",
     "exams",
+    "fees",
     
     
 ]
@@ -171,3 +175,6 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+
+PAYSTACK_SECRET_KEY = os.environ.get("PAYSTACK_SECRET_KEY", "")
+PAYSTACK_CALLBACK_URL = os.environ.get("PAYSTACK_CALLBACK_URL", "http://localhost:3000/payment/callback")
