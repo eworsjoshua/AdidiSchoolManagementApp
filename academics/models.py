@@ -73,3 +73,8 @@ class Enrollment(models.Model):
 
     def __str__(self):
         return f"{self.student} -> {self.school_class} ({self.session})"
+    
+class Term(models.TextChoices):
+    FIRST = "first", "First Term"
+    SECOND = "second", "Second Term"
+    THIRD = "third", "Third Term"
